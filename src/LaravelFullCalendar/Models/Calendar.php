@@ -1,4 +1,4 @@
-<?php namespace LaravelFullCalendar;
+<?php namespace src\LaravelFullCalendar\Models;
 
 use ArrayAccess;
 use DateTime;

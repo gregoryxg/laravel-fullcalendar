@@ -24,13 +24,13 @@ Or add the following to your composer.json's require section and `composer updat
 Register the service provider in your `app.php` config file:
 
 ```php
-LaravelFullCalendar\ServiceProvider::class,
+src\LaravelFullCalendar\Models\ServiceProvider::class,
 ```
 
 And optionally create an alias:
 
 ```php
-'Calendar' => LaravelFullCalendar\Facades\Calendar::class,
+'Calendar' => src\LaravelFullCalendar\Facades\Calendar::class,
 
 ```
 
@@ -61,10 +61,10 @@ $event = \Calendar::event(
 ```
 #### Implementing `Event` Interface
 
-Alternatively, you can use an existing class and have it implement `LaravelFullCalendar\Event`. An example of an Eloquent model that implements the `Event` interface:
+Alternatively, you can use an existing class and have it implement `src\LaravelFullCalendar\Models\Event`. An example of an Eloquent model that implements the `Event` interface:
 
 ```php
-class EventModel extends Eloquent implements \gregoryxg\LaravelFullCalendar\Event
+class EventModel extends Eloquent implements \src\LaravelFullCalendar\Models\Event
 {
 
     protected $dates = ['start', 'end'];
@@ -122,10 +122,10 @@ class EventModel extends Eloquent implements \gregoryxg\LaravelFullCalendar\Even
 
 #### `IdentifiableEvent` Interface
 
-If you wish for your existing class to have event IDs, implement `\LaravelFullCalendar\IdentifiableEvent` instead. This interface extends `\LaravelFullCalendar\Event` to add a `getId()` method:
+If you wish for your existing class to have event IDs, implement `\src\LaravelFullCalendar\Models\IdentifiableEvent` instead. This interface extends `\src\LaravelFullCalendar\Models\Event` to add a `getId()` method:
 
 ```php
-class EventModel extends Eloquent implements \LaravelFullCalendar\IdentifiableEvent
+class EventModel extends Eloquent implements \src\LaravelFullCalendar\Models\IdentifiableEvent
 {
 
 	// Implement all Event methods ...
@@ -168,7 +168,7 @@ $event = \Calendar::event(
 
 ```php
 <?php
-class CalendarEvent extends \Illuminate\Database\Eloquent\Model implements \gregoryxg\LaravelFullCalendar\Event
+class CalendarEvent extends \Illuminate\Database\Eloquent\Model implements \src\LaravelFullCalendar\Models\Event
 {
 	//...
 
@@ -214,7 +214,7 @@ $events[] = \Calendar::event(
 	'stringEventId' //optionally, you can specify an event ID
 );
 
-$eloquentEvent = EventModel::first(); //EventModel implements LaravelFullCalendar\Event
+$eloquentEvent = EventModel::first(); //EventModel implements src\LaravelFullCalendar\Models\Event
 
 $calendar = \Calendar::addEvents($events) //add an array with addEvents
     ->addEvent($eloquentEvent, [ //set custom color fo this event

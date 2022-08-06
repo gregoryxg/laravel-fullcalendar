@@ -1,4 +1,4 @@
-<?php namespace LaravelFullCalendar\Facades;
+<?php namespace src\LaravelFullCalendar\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
