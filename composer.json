@@ -13,8 +13,8 @@
         "illuminate/support": "*"
     },
     "autoload": {
-        "psr-0": {
-            "MaddHatter\\LaravelFullcalendar": "src/"
+        "psr-4": {
+            "MaddHatter\\LaravelFullcalendar\\": "src/"
         }
     },
     "extra": {
