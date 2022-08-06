@@ -20,10 +20,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelFullCalendar\\Models\\ServiceProvider"
+                "src\\LaravelFullCalendar\\Models\\ServiceProvider"
             ],
             "aliases": {
-                "Calendar": "LaravelFullCalendar\\Models\\Facades\\Calendar"
+                "Calendar": "src\\LaravelFullCalendar\\Models\\Facades\\Calendar"
             }
         }
     },
