@@ -14,16 +14,16 @@
     },
     "autoload": {
         "psr-4": {
-            "gregoryxg\\LaravelFullcalendar\\": "src/"
+            "gregoryxg\\LaravelFullCalendar\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "gregoryxg\\LaravelFullcalendar\\ServiceProvider"
+                "gregoryxg\\LaravelFullCalendar\\ServiceProvider"
             ],
             "aliases": {
-                "Calendar": "gregoryxg\\LaravelFullcalendar\\Facades\\Calendar"
+                "Calendar": "gregoryxg\\LaravelFullCalendar\\Facades\\Calendar"
             }
         }
     },

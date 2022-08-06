@@ -1,8 +1,8 @@
-<?php namespace gregoryxg\LaravelFullcalendar;
+<?php namespace gregoryxg\LaravelFullCalendar;
 
 use ArrayAccess;
 use DateTime;
-use Illuminate\View\Factory;
+use Illuminate\Contracts\View\Factory;
 
 class Calendar
 {
@@ -126,8 +126,7 @@ class Calendar
             return $this->id;
         }
 
-        $this->id = str_random(8);
-
+        $this->id = (string)rand(1,8);
         return $this->id;
     }
 

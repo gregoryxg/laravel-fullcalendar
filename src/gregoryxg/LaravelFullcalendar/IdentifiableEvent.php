@@ -1,4 +1,4 @@
-<?php namespace gregoryxg\LaravelFullcalendar;
+<?php namespace gregoryxg\LaravelFullCalendar;
 
 interface IdentifiableEvent extends Event
 {

@@ -1,4 +1,4 @@
-<?php namespace gregoryxg\LaravelFullcalendar;
+<?php namespace gregoryxg\LaravelFullCalendar;
 
 use DateTime;
 
@@ -7,7 +7,7 @@ use DateTime;
  *
  * Simple DTO that implements the Event interface
  *
- * @package gregoryxg\LaravelFullcalendar
+ * @package gregoryxg\LaravelFullCalendar
  */
 class SimpleEvent implements IdentifiableEvent
 {

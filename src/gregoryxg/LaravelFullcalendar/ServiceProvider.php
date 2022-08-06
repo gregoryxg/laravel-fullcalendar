@@ -1,4 +1,4 @@
-<?php namespace gregoryxg\LaravelFullcalendar;
+<?php namespace gregoryxg\LaravelFullCalendar;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
@@ -13,7 +13,7 @@ class ServiceProvider extends BaseServiceProvider
     public function register()
     {
         $this->app->bind('laravel-fullcalendar', function ($app) {
-            return $app->make('gregoryxg\LaravelFullcalendar\Calendar');
+            return $app->make('gregoryxg\LaravelFullCalendar\Calendar');
         });
     }
 

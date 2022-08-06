@@ -1,4 +1,4 @@
-<?php namespace gregoryxg\LaravelFullcalendar;
+<?php namespace gregoryxg\LaravelFullCalendar;
 
 use Illuminate\Support\Collection;
 
@@ -40,7 +40,7 @@ class EventCollection
             'end' => $event->getEnd()->format('c'),
         ];
 
-        $eventOptions = method_exists($event, 'getEventOptions') ? $event->getEventOptions() : [];
+        $eventOptions =  $event instanceof SimpleEvent ? $event->getEventOptions() : [];
 
         return array_merge($eventArray, $eventOptions, $customAttributes);
     }
