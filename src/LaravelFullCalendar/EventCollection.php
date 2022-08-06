@@ -1,4 +1,4 @@
-<?php namespace gregoryxg\LaravelFullCalendar;
+<?php namespace src\LaravelFullCalendar;
 
 use Illuminate\Support\Collection;
 
