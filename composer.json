@@ -14,16 +14,16 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelFullCalendar\\": "src/"
+            "LaravelFullCalendar\\": "src/LaravelFullCalendar"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "src\\LaravelFullCalendar\\Models\\ServiceProvider"
+                "LaravelFullCalendar\\Models\\ServiceProvider"
             ],
             "aliases": {
-                "Calendar": "src\\LaravelFullCalendar\\Models\\Facades\\Calendar"
+                "Calendar": "LaravelFullCalendar\\Models\\Facades\\Calendar"
             }
         }
     },
